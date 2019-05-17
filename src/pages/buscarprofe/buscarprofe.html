@@ -1,0 +1,33 @@
+<!--
+  Generated template for the BuscarprofePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Profesores</ion-title>
+  </ion-navbar>
+  <ion-searchbar placeholder="Buscar por profesor" (ionInput)="getItems($event)"></ion-searchbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let materia of oferta">
+            <ion-thumbnail item-start>
+              </ion-thumbnail>
+        <h2>
+            {{materia.Profesor}}
+        </h2>
+        <p>
+            {{materia.Materia}}
+        </p>
+        <p>
+           Sección: {{materia.Seccion}}  Carrera: {{materia.Carrera}}
+        </p>
+
+        <button ion-button clear item-end (click)="infom(materia)">Ver </button>
+        
+        </ion-item>
+      </ion-list>
+</ion-content>

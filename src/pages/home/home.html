@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Oferta Académica
+    </ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="buscarmate()">
+          <ion-icon name="search"></ion-icon>
+        </button>
+        <button ion-button icon-only (click)="buscarprofe()">
+            <ion-icon name="search"></ion-icon>
+          </button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-title>
+    Carreras DIVEC
+  </ion-title>
+    <ion-card>
+    <ion-card-header (click)= "infor('INCO')">
+      INCO
+    </ion-card-header>
+    </ion-card>
+    <ion-card>
+        <ion-card-header (click)= "infor('INNI')">
+          INNI
+        </ion-card-header>
+        </ion-card>
+        <ion-card>
+            <ion-card-header (click)= "infor('INRO')">
+              INRO
+            </ion-card-header>
+            </ion-card>
+            <ion-card>
+                <ion-card-header (click)= "infor('INCE')">
+                  INCE
+                </ion-card-header>
+                </ion-card>
+                <ion-card>
+                    <ion-card-header (click)= "infor('INBI')">
+                      INBI
+                    </ion-card-header>
+                    </ion-card>
+                    <ion-card>
+                        <ion-card-header (click)= "infor('IGFO')">
+                          IGFO
+                        </ion-card-header>
+                        </ion-card>
+
+</ion-content>
